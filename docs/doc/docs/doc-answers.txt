@@ -1,4 +1,72 @@
-touch docs/answers.txt
-git add docs/answers.txt
-git commit -m "Add empty answers.txt in docs for assignment responses"
-git push
+Name: Kray
+FSUID: abc123x
+
+-- Annotations (submission info) --
+Dates I went through the Git Lab Tutorials:
+- Learn Git Branching (Main – Introduction Sequence): YYYY-MM-DD
+- Learn Git Branching (Remotes – Push & Pull): YYYY-MM-DD
+- Visualizing Git: YYYY-MM-DD
+- Extra try.github.io tutorial: YYYY-MM-DD
+
+Date I created my GitHub account (rough estimate if old): YYYY-MM
+
+Repository URL (my fork): https://github.com/<your-username>/assignment2
+(I have granted access to the instructor by [option a/b below].)
+
+-- Console output from step 3.C (git status) --
+<paste the contents of docs/status.txt here or paste console output you saved earlier>
+
+-- Answers to the questions --
+
+1) How many commits have been done to the repository so far?
+Command used:
+git rev-list --all --count
+
+(You can run that in the repository; example output:)
+<number-of-commits>
+
+2) When was README.md last modified? Command used:
+git log -1 --format="%cd" -- README.md
+# or for an ISO date:
+git log -1 --date=iso --pretty=format:"%cd" -- README.md
+(Example output:)
+YYYY-MM-DD HH:MM:SS +ZZZZ
+
+3) Mention two reasons why branches are used in a Git repository:
+- Reason A: Isolation — branches let developers work on features/fixes without affecting the main branch.
+- Reason B: Parallel development & safe experimentation — multiple branches allow concurrent work and easier merging/review.
+
+4) What is the difference between git log and git status?
+- git status shows the current working tree state: what’s staged, unstaged, untracked, and the branch HEAD.
+- git log shows the commit history (past commits) for the repository/branch.
+
+5) What command would you use to see the commits where "Vehicle.h" was one of the committed files?
+Command:
+git log --pretty=oneline --name-only -- Vehicle.h
+# or to follow renames:
+git log --follow --pretty=oneline -- Vehicle.h
+
+6) What command would you use to see the commits whose commit message contains the word "file"?
+Command:
+git log --grep=file --all --pretty=oneline
+
+7) OOP concepts:
+I) What is inheritance?
+- Inheritance is a mechanism where a class (subclass/derived) acquires fields and methods from another class (superclass/base), enabling code reuse and hierarchical relationships.
+
+II) What is polymorphism?
+- Polymorphism allows code to treat objects of different classes through a common interface (e.g., base-class pointers referring to derived-class objects) and have method calls resolve to the appropriate implementation (dynamic dispatch).
+
+III) What is encapsulation?
+- Encapsulation bundles data and methods that operate on the data inside a class and controls access to that data via visibility (private/protected/public), protecting internal state from improper use.
+
+-- Questions 9–10 based on "Git Commands, workflow, and resources.pdf" --
+
+9) Main difference between "Dictator and Lieutenants" and "Integration manager" workflows:
+- Dictator & Lieutenants: A single integrator (dictator) decides what goes into the mainline; lieutenants collect and vet patches and send them to the dictator. This central integrator model keeps a single authoritative integrator but with several lieutenants managing subareas.
+- Integration Manager: One or more integration managers accept pull requests/patches from contributors and integrate them into their maintained branches; maintainers then pass integrated changes upstream. It decentralizes integration by giving multiple managers control over specific areas.
+
+10) How would a team of 100 developers benefit from Dictator & Lieutenants instead of Centralized workflow?
+- With 100 devs, Dictator & Lieutenants scales better than a single-centralized repo owner: lieutenants reduce the integrator’s load by pre-vetting patches, speeding review/merge, and improving area ownership. It keeps control/quality with a single dictator while delegating review work so contributions flow faster and with less bottleneck than a strictly centralized one-person integrator.
+
+-- End of answers --
