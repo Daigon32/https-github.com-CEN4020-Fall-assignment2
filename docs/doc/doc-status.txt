@@ -1,0 +1,7 @@
+mkdir -p docs
+git status > docs/status.txt
+
+git add docs/status.txt
+git commit -m "Add git status output to docs/status.txt
+
+
