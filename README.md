@@ -1,2 +1,10 @@
-# https-github.com-CEN4020-Fall-assignment2
-git remote add upstream https://github.com/CEN4020-Fall/assignment2.git git fetch upstream
+Name: Levi Nava
+FSUID: Lkn23a
+git checkout -b add-readme-owner    # create a feature branch
+git add README.md
+git commit -m 
+
+
+git push -u origin add-readme-owner
+
+
