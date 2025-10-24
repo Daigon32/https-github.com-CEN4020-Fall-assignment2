@@ -1,36 +1,38 @@
-Name: Kray
-FSUID: abc123x
+Name: Levi Nava
+FSUID: Lkn23a
 
--- Annotations (submission info) --
-Dates I went through the Git Lab Tutorials:
-- Learn Git Branching (Main – Introduction Sequence): YYYY-MM-DD
-- Learn Git Branching (Remotes – Push & Pull): YYYY-MM-DD
-- Visualizing Git: YYYY-MM-DD
-- Extra try.github.io tutorial: YYYY-MM-DD
 
-Date I created my GitHub account (rough estimate if old): YYYY-MM
+Dates I went through the Git Lab Tutorials:2025-10-23
+- Learn Git Branching (Main – Introduction Sequence): 2025-10-20
+- Learn Git Branching (Remotes – Push & Pull): 2025-10-22
+- Visualizing Git: 2025-10-23
+- Extra try.github.io tutorial: 2025-10-23
 
-Repository URL (my fork): https://github.com/<your-username>/assignment2
-(I have granted access to the instructor by [option a/b below].)
+Date I created my GitHub account (rough estimate if old): 2020-02
+
+Repository URL (my fork):https://github.com/Daigon32/https-github.com-CEN4020-Fall-assignment2
+(I have granted access to the instructor by [option a/b below].) I made it Public
 
 -- Console output from step 3.C (git status) --
-<paste the contents of docs/status.txt here or paste console output you saved earlier>
+mkdir -p docs
+git status > docs/status.txt
 
--- Answers to the questions --
+git add docs/status.txt
+git commit -m "Add git status output to docs/status.txt
+
 
 1) How many commits have been done to the repository so far?
 Command used:
 git rev-list --all --count
 
-(You can run that in the repository; example output:)
-<number-of-commits>
+
 
 2) When was README.md last modified? Command used:
 git log -1 --format="%cd" -- README.md
 # or for an ISO date:
 git log -1 --date=iso --pretty=format:"%cd" -- README.md
-(Example output:)
-YYYY-MM-DD HH:MM:SS +ZZZZ
+
+2025-10-23 05:22:45 
 
 3) Mention two reasons why branches are used in a Git repository:
 - Reason A: Isolation — branches let developers work on features/fixes without affecting the main branch.
@@ -52,21 +54,19 @@ git log --grep=file --all --pretty=oneline
 
 7) OOP concepts:
 I) What is inheritance?
-- Inheritance is a mechanism where a class (subclass/derived) acquires fields and methods from another class (superclass/base), enabling code reuse and hierarchical relationships.
-
+- Code reuse and hierarchical relationships are made possible by inheritance, a process by which a class (subclass/derived) obtains fields and functions from another class (superclass/base).
 II) What is polymorphism?
-- Polymorphism allows code to treat objects of different classes through a common interface (e.g., base-class pointers referring to derived-class objects) and have method calls resolve to the appropriate implementation (dynamic dispatch).
+- Code can handle objects of multiple classes using a common interface thanks to polymorphism. For example, base-class pointers can refer to derived-class objects, and method calls can resolve to the proper implementation (dynamic dispatch).
 
 III) What is encapsulation?
-- Encapsulation bundles data and methods that operate on the data inside a class and controls access to that data via visibility (private/protected/public), protecting internal state from improper use.
+- Encapsulation protects internal state against misuse by grouping data and methods that work with it inside a class and regulating access to the data through visibility (private, protected, and public).
 
--- Questions 9–10 based on "Git Commands, workflow, and resources.pdf" --
+
 
 9) Main difference between "Dictator and Lieutenants" and "Integration manager" workflows:
-- Dictator & Lieutenants: A single integrator (dictator) decides what goes into the mainline; lieutenants collect and vet patches and send them to the dictator. This central integrator model keeps a single authoritative integrator but with several lieutenants managing subareas.
-- Integration Manager: One or more integration managers accept pull requests/patches from contributors and integrate them into their maintained branches; maintainers then pass integrated changes upstream. It decentralizes integration by giving multiple managers control over specific areas.
+- Dictator & Lieutenants: Lieutenants gather and inspect patches before sending them to the dictator, who is the only integrator (dictator) who makes decisions on what goes into the mainline.  With multiple lieutenants overseeing subareas, this central integrator model retains a single authoritative integrator.
+- Integration Manager: Maintainers then transfer integrated modifications upstream when one or more integration managers incorporate contributors' pull requests and patches into their maintained branches.  By granting several managers authority over particular sectors, it decentralizes integration.
 
 10) How would a team of 100 developers benefit from Dictator & Lieutenants instead of Centralized workflow?
-- With 100 devs, Dictator & Lieutenants scales better than a single-centralized repo owner: lieutenants reduce the integrator’s load by pre-vetting patches, speeding review/merge, and improving area ownership. It keeps control/quality with a single dictator while delegating review work so contributions flow faster and with less bottleneck than a strictly centralized one-person integrator.
-
+- Dictator & Lieutenants scales better than a single-centralized repository owner with 100 developers. Lieutenants speed up review/merge, improve area ownership, and pre-vet changes, which lessens the integrator's workload.  Compared to a strictly centralized one-person integrator, it maintains control and quality with a single dictator while assigning review tasks to others, allowing contributions to flow more quickly and with fewer bottlenecks.
 -- End of answers --
