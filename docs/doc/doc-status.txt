@@ -5,3 +5,126 @@ git add docs/status.txt
 git commit -m "Add git status output to docs/status.txt
 
 
+Kevin@DESKTOP-JP1FU38 MINGW64 ~
+$ hello
+bash: hello: command not found
+
+Kevin@DESKTOP-JP1FU38 MINGW64 ~
+$ ^[[200~git --version
+bash: $'\E[200~git': command not found
+
+Kevin@DESKTOP-JP1FU38 MINGW64 ~
+$ git --version
+git version 2.51.2.windows.1
+
+Kevin@DESKTOP-JP1FU38 MINGW64 ~
+$ git clone https://github.com/Daigon32/
+Cloning into 'Daigon32'...
+remote: Not Found
+fatal: repository 'https://github.com/Daigon32/' not found
+
+Kevin@DESKTOP-JP1FU38 MINGW64 ~
+$ ^[[200~git clone https://github.com/YOUR-USERNAME/assignment2
+8. **Read the existing code** to familiarize yourself
+
+### **Phase 3: Repository Tasks (70 points)**
+
+9. **Modify README.md (5 points)**
+   - Open README.md in your text editor
+   - Add these lines at the top:
+```
+     Name: Your Full Name
+     FSUID: your_fsuidbash: $'\E[200~git': command not found
+
+Kevin@DESKTOP-JP1FU38 MINGW64 ~
+$    cd assignment2
+bash: cd: assignment2: No such file or directory
+
+Kevin@DESKTOP-JP1FU38 MINGW64 ~
+$ ```
+>
+> 8. **Read the existing code** to familiarize yourself
+>
+> ### **Phase 3: Repository Tasks (70 points)**
+>
+> 9. **Modify README.md (5 points)**
+>    - Open README.md in your text editor
+>    - Add these lines at the top:
+> ```
+bash: 8.: command not found
+bash: command substitution: line 7: syntax error near unexpected token `('
+bash: command substitution: line 7: `9. **Modify README.md (5 points)**'
+
+Kevin@DESKTOP-JP1FU38 MINGW64 ~
+$      Name: Your Full Name
+bash: Name:: command not found
+
+Kevin@DESKTOP-JP1FU38 MINGW64 ~
+$      FSUID: your_fsuid
+bash: FSUID:: command not found
+
+Kevin@DESKTOP-JP1FU38 MINGW64 ~
+$ git clone https://github.com/Daigon32/https-github.com-CEN4020-Fall-assignment2.git
+   cd https-github.com-CEN4020-Fall-assignment2
+Cloning into 'https-github.com-CEN4020-Fall-assignment2'...
+remote: Enumerating objects: 48, done.
+remote: Counting objects: 100% (48/48), done.
+remote: Compressing objects: 100% (37/37), done.
+remote: Total 48 (delta 3), reused 0 (delta 0), pack-reused 0 (from 0)
+Receiving objects: 100% (48/48), 13.13 KiB | 244.00 KiB/s, done.
+Resolving deltas: 100% (3/3), done.
+
+Kevin@DESKTOP-JP1FU38 MINGW64 ~/https-github.com-CEN4020-Fall-assignment2 (main)
+$ ^C
+
+Kevin@DESKTOP-JP1FU38 MINGW64 ~/https-github.com-CEN4020-Fall-assignment2 (main)
+$ git add README.md
+    git commit -m "Add repository owner information
+
+    Updated README.md with owner name and FSUID to identify
+    the repository maintainer."
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'Kevin@DESKTOP-JP1FU38.(none)')
+
+Kevin@DESKTOP-JP1FU38 MINGW64 ~/https-github.com-CEN4020-Fall-assignment2 (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+Kevin@DESKTOP-JP1FU38 MINGW64 ~/https-github.com-CEN4020-Fall-assignment2 (main)
+$ git add docs/status.txt
+    git commit -m "Add git status output to docs folder"
+    git push origin main
+fatal: pathspec 'docs/status.txt' did not match any files
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'Kevin@DESKTOP-JP1FU38.(none)')
+info: please complete authentication in your browser...
+Everything up-to-date
+
+Kevin@DESKTOP-JP1FU38 MINGW64 ~/https-github.com-CEN4020-Fall-assignment2 (main)
+$ \
+
