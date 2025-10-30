@@ -25,14 +25,16 @@ git commit -m "Add git status output to docs/status.txt
 Command used:
 git rev-list --all --count
 
+$ git rev-list --all --count
+9
 
 
 2) When was README.md last modified? Command used:
 git log -1 --format="%cd" -- README.md
 # or for an ISO date:
 git log -1 --date=iso --pretty=format:"%cd" -- README.md
+Thu Oct 23 16:00:39 2025 -0400
 
-2025-10-23 05:22:45 
 
 3) Mention two reasons why branches are used in a Git repository:
 - Reason A: Isolation — branches let developers work on features/fixes without affecting the main branch.
