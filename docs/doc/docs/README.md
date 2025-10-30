@@ -1,5 +1,5 @@
 Name: Levi
-FSUID: abc123x
+FSUID: lkn23a
 
 # Assignment 2 - RoleGame & Git Lab
 
